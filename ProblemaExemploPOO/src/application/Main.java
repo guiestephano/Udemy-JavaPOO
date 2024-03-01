@@ -24,17 +24,17 @@ public class Main {
 
         Product product = new Product(name, price, quantity);
 
-        System.out.printf("%nProduct data: %s, $ %.2f, %d units, Total: $ %.2f%n%n",product.name,product.price,product.quantity,product.totalValueInStock());
+        System.out.println("\nProduct data: " + product + "\n");
 
         System.out.print("Enter the number of products to be added in stock: ");
         quantity = sc.nextInt();
         product.addProducts(quantity);
-        System.out.printf("%nUpdated data: %s, $ %.2f, %d units, Total: $ %.2f%n%n",product.name,product.price,product.quantity,product.totalValueInStock());
+        System.out.println("\nUpdated data: "+ product + "\n");
 
         System.out.print("Enter the number of products to be removed from stock: ");
         quantity = sc.nextInt();
         product.removeProducts(quantity);
-        System.out.printf("%nUpdated data: %s, $ %.2f, %d units, Total: $ %.2f%n",product.name,product.price,product.quantity,product.totalValueInStock());
+        System.out.println("\nUpdated data: "+ product + "\n");
 
         sc.close();
     }
