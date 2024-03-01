@@ -1,0 +1,5 @@
+# Exercício 1
+Fazer um programa para ler os valores da largura e altura de um retângulo. 
+Em seguida, mostrar na tela o valor de sua área, perímetro e diagonal.
+### exemplo:
+![imagem de exemplo](img/exemplo.png)
