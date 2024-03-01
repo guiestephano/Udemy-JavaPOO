@@ -6,4 +6,4 @@ Fazer um programa para ler os dados de um produto em estoque
 * Realizar uma saída no estoque e mostrar novamente os dados do produto
 
 ### Exemplo:
-![Imagem de exemplo](/img/exemplo.png)
+![Imagem de exemplo](img/exemplo.png)
