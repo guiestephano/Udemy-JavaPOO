@@ -7,6 +7,7 @@ import model.entities.Department;
 import model.entities.Seller;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +29,11 @@ public class Program {
         System.out.println("\n--------- Test 03: seller findAll(): ------------");
         list = sellerDao.findAll();
         list.forEach(System.out::println);
+
+        System.out.println("\n--------- Test 04: seller insert(): ------------");
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", Date.valueOf(LocalDate.now()), 4000.0, dep);
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! new id: " + newSeller.getId());
 
     }
 }
